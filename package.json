@@ -1,0 +1,22 @@
+{
+  "name": "rxjs-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highkeen/rxjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/highkeen/rxjs/issues"
+  },
+  "homepage": "https://github.com/highkeen/rxjs#readme",
+  "dependencies": {
+    "rxjs": "^6.2.1"
+  }
+}
