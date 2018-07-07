@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/highkeen/rxjs#readme",
   "dependencies": {
-    "rxjs": "^6.2.1"
+    "rxjs": "^6.2.1",
+    "rxjs-compat": "^6.2.1"
   }
 }

@@ -13,8 +13,12 @@ function mockAsyncData() {
 
 
 var response= mockAsyncData();
-response.then(x=>console.log(x));
-response.then(x=>console.log(x));
+/*response.then(x=>console.log(x));
+response.then(x=>console.log(x));*/
+
+setInterval(()=>{
+    response.then(x=>console.log(x));
+},1000);
 
 
 

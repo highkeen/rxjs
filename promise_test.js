@@ -24,11 +24,10 @@ function mockAsyncData2() {
 
 mockAsyncData().then(x=>{
     console.log(x);
-    return  mockAsyncData2();
+    return mockAsyncData2();
 })
 .then(x=>console.log(`next data ${x}`))
 .catch(error=>console.log(`Error ${error}`));
- //console.log(r);
 
 Promise.all(mockAsyncData,mockAsyncData2).then(res=>{
     console.log(res);
