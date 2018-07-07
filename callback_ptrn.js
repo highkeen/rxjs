@@ -1,4 +1,4 @@
-/* function caller(callback){
+ function caller(callback){
     callback(10);
 
 }
@@ -11,4 +11,4 @@ caller(myCallBack);
 caller(function(x){
     console.log('Executed... '+x);
 });
-caller(data=>consol.log(data)); */
+caller(data=>consol.log(data)); 
