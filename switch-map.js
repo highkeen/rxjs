@@ -1,5 +1,4 @@
 const Rx = require('rxjs/rx');
-
 function subscription(name) {
     return {
         next(data) {
@@ -14,18 +13,20 @@ function subscription(name) {
     };
 }
 
-function source(observer){
-    console.log('Initilized...');
-    observer.next(1);
-    observer.next(2);
-    observer.next(3);
-    observer.next(4);
-};
 
-var ob = Rx.Observable.create(source);
+
+var ob=Rx.Observable.interval(1000)
+.take(5)
+.switchMap((i)=>{
+    console.log('create new');
+    return Rx.Observable.interval().take(2).map(x=> [x,i]);
+});
+
 
 ob.subscribe(subscription('sub1'));
-ob.subscribe(subscription('sub2'));
+
+//ob.subscribe(subscription('sub2'));
+
 
 
 
