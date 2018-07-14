@@ -15,11 +15,10 @@ function subscription(name) {
 
 
 
-var ob=Rx.Observable.interval(1000)
-.take(5)
+var ob=Rx.Observable.interval(2000)
+.take(2)
 .switchMap((i)=>{
-    console.log('create new');
-    return Rx.Observable.interval().take(2).map(x=> [x,i]);
+    return Rx.Observable.interval(2000).take(10).map(x=> [i,x]);
 });
 
 
